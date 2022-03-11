@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    class grade
+    {
+        public int a;
+        public int b;
+        public int add()
+        {
+            Console.WriteLine("enter the first number ");
+            this.a = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter the sescond number");
+            this.b = int.Parse(Console.ReadLine());
+            int c = this.a + this.b;
+            return c;
+
+        }
+        class program
+        {
+
+            static void Main(string[] args)
+            {
+                grade obj = new grade();
+                int s = obj.add();
+                Console.WriteLine(s);
+                Console.ReadLine();
+            }
+        }
+    }
+}
