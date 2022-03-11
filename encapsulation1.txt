@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp12
+{
+
+
+    class subodh
+    {
+        private string name;
+        private int Rollno;
+        private string subject;
+        public string ename
+        {
+            set { name = value; }
+            get { return name; }
+
+        }
+        public int eroll
+        {
+            set { Rollno = value; }
+            get { return Rollno; }
+        }
+        public string sub
+        {
+            set { subject = value; }
+            get { return subject; }
+        }
+
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                subodh obj = new subodh();
+                obj.ename = "Manish Tomar";
+                obj.eroll = 2518;
+                obj.sub = "english ,maths ";
+                Console.WriteLine("  ename = {0}\n   eroll =  {1} \n  sub =  {2} \n ", obj.ename  , obj.eroll, obj.sub);
+                Console.ReadLine();
+            }
+        }
+    }
+}
